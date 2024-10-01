@@ -1,0 +1,152 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.master{
+    opacity: 0;
+    animation: fadeIn 1s forwards; 
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    font-size: 25px;
+}
+.contentInfo{
+    display: flex;
+    gap: 50px;
+}
+.profile img{
+    max-width: 0px;
+    animation: loadImg 1s forwards; 
+    border-radius: 25px;
+    transition: all 1s ease;
+}
+.paragraphOne{
+    font-weight: 100;
+}
+.textInfo{
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+.textInfo .text{
+    max-width: 400px;
+    border-radius: 25px;
+    padding: 5px;
+    width: 100%;
+    border: 1px solid rgb(150, 150, 150);
+}
+@media (max-width : 1000px){
+    .master{
+        font-size: 20px;
+    }
+    .contentInfo{
+        max-width: 300px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .textInfo{
+        max-width: 90%;
+        margin: auto;
+    }
+    .textInfo .text{
+    width: 200px;
+    color: black;
+    }
+    .textInfoSepehr{
+        max-width: 90%;
+        margin: auto;
+    }
+}
+@media (max-width : 600px){
+    .master{
+        color: black;
+        margin: auto;
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .contentAbout{
+        max-width: 150px;
+        margin: auto;
+    }
+    .contentInfo{
+        display: flex;
+        justify-content: center;
+    }
+    .profile img{
+        height: 200px;
+    }
+    /* .textInfo{
+        gap: 10px;
+    }
+    .textInfo  .text{
+        margin-top: -20px;
+        height: auto;
+    } */
+}
+
+@media (max-width : 386px){
+    .contentAbout{
+        max-width: 90%;
+    }
+    .paragraphOne{
+        font-size: 10px;
+    }
+    .h1TagContent{
+        font-size: 15px;
+    }
+    .profile img{
+        height: 150px;
+    }
+    /* .info{
+        max-width: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: auto;
+    } */
+     .info{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     }
+    .textInfo{
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .textInfo  .text{
+        text-align: center;
+        border-radius: 10px;
+        width: 150px;
+    height: 150px;
+    }
+    .textInfoSepehr{
+        text-align: center;
+        z-index: -100;
+        max-width: 250px;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes loadImg {
+    from{
+        max-width: 0px;
+    }
+    to{
+        max-width: 300px;
+    }
+  }

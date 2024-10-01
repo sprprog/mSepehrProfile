@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.masterDiv{
+    max-width: 1200px;
+    margin: auto;
+    animation: fadeIn 1s forwards; 
+}
+.masterDiv p{
+    color: gray;
+}
+.emailBox{
+    max-width: 500px;
+    padding: 40px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.emailBox h1{
+    transition: all .4s ease;
+    font-size: 30px;
+    cursor: pointer;
+}
+.emailBox h1:hover{
+    color: gray;
+}
+@media (max-width : 600px){
+    .emailBox{
+        max-width: 250px;
+    }
+}
+@media (max-width : 470px){
+    .emailBox{
+        max-width: 200px;
+        padding: 20px;
+    }
+    .emailBox h1{
+        font-size: 20px;
+    }
+}
+@media (max-width : 350px){
+    .emailBox{
+        max-width: 150px;
+        padding: 10px;
+    }
+    .emailBox h1{
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.master{
+    animation: fadeIn 2s forwards; 
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+
+}
+
+#iFirstBefore{
+    z-index: 999;
+    top: 50%;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    position: fixed;
+    left: 0%;
+}
+#iLastNext{
+    z-index: 999;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    position: fixed;
+    top: 50%;
+    right: 0%;
+}
+i:hover{
+    scale: 1.1;
+    opacity: 60%;
+}
+.countPageParent{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.countPage1 , .countPage2 , .countPage3 , .countPage4{
+    width: 10px;
+    height: 10px ;
+    transition: all 1s ease;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px black;
+}
