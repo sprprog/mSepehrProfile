@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.535b8533.css",
+    "main.js": "/static/js/main.0be3db90.js",
+    "static/media/my profile.png": "/static/media/my profile.9028e5a33ca2be2d519e.png",
+    "static/media/my profile youtube1.png": "/static/media/my profile youtube1.75fa17bf6adcfb47ee4c.png",
+    "static/media/Mohammad_Sepehr_Khosravi_Attractive_Resume.pdf": "/static/media/Mohammad_Sepehr_Khosravi_Attractive_Resume.32a38fe2397aef577a5c.pdf",
+    "index.html": "/index.html",
+    "main.535b8533.css.map": "/static/css/main.535b8533.css.map",
+    "main.0be3db90.js.map": "/static/js/main.0be3db90.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.535b8533.css",
+    "static/js/main.0be3db90.js"
+  ]
+}
