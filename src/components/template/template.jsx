@@ -66,18 +66,30 @@ class Template extends Component {
     pageInfo = () =>{
         let newPage = 0;
         this.setState({a : newPage} , this.loadCountPage);
+        setInterval(()=>{
+            this.handelBorderLi();
+        }, 1000)
     }
     pageAbout = () =>{
         let newPage  = 1;
-        this.setState({a : newPage} , this.loadCountPage)
+        this.setState({a : newPage} , this.loadCountPage);
+        setInterval(()=>{
+            this.handelBorderLi();
+        }, 1000)
     }
     pageSkills =() =>{
         let newPage = 2;
         this.setState({a : newPage} , this.loadCountPage);
+        setInterval(()=>{
+            this.handelBorderLi();
+        }, 1000)
     }
     contactPage = () =>{
         let newPage = 3 ;
         this.setState({a : newPage} , this.loadCountPage);
+        setInterval(()=>{
+            this.handelBorderLi();
+        }, 1000)
     }
     nextPage = () => {
         let { a } = this.state;
